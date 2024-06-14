@@ -1,0 +1,10 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: web-route
+spec:
+  to:
+    kind: Service
+    name: web-service
+  port:
+    targetPort: 8080
